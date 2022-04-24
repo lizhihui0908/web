@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 去除全文的内外边距 */
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        /* 上面的导航栏 */
+        .nav {
+
+            background-color: rgb(225, 225, 225);
+            height: 40px;
+
+        }
+
+        /* 修改密码按钮的颜色与下划线 */
+        .a {
+            color: #2489f6;
+            border-bottom: #2489f6 solid;
+        }
+
+        /* 导航栏中各个小盒子的设置 */
+        .nav div {
+            float: left;
+            background-color: rgb(227, 227, 227);
+            height: 40px;
+            width: 110px;
+            line-height: 40px;
+            margin-left: 10px;
+            text-indent: 1.5em;
+        }
+
+        /* 单击导航栏之后的颜色与边框变化 */
+        .nav div:hover {
+            color: #2489f6;
+            border-bottom: #2489f6 solid;
+        }
+
+        /* 按钮 */
+
+        .anniu1 {
+            width: 100px;
+            height: 40px;
+            background-color: #2489f6;
+            font-weight: 400px;
+            margin-left: 700px;
+            border-radius: 10px;
+            font-size: 20px;
+            color: aliceblue;
+            margin-top: 40px;
+            /* 消除阴影 */
+            border: none;
+        }
+
+        /* 最后的提示内容 */
+        .zuihou {
+            height: 200px;
+            color: #999;
+            padding-left: 400px;
+            margin-top: 40px;
+        }
+
+        /* 中间改密码的css */
+        .zhongjian {
+            height: 400px;
+            margin-top: 42px;
+            padding: 5px 0px;
+        }
+
+
+
+        /* 密码框设置 */
+        .bianjikuang {
+            width: 240px;
+            height: 40px;
+            border-radius: 5px;
+
+            border: 1px solid #999;
+
+        }
+
+        .zhengge {
+            padding: 30px 100px;
+            margin-left: 400px;
+        }
+
+        .zhengge1 {
+            padding: 30px 100px;
+            margin-left: 385px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 导航栏部分 -->
+    <div class="nav">
+        <div>修改资料</div>
+        <div class="a">修改密码</div>
+        <div>绑定账号</div>
+        <div>注册账号</div>
+    </div>
+    <!-- 注册部分 -->
+    <div class="zhongjian">
+        <div class="zhengge">旧密码：<input type="password" class="bianjikuang"></div>
+        <div class="zhengge">新密码：<input type="password" class="bianjikuang"></div>
+        <div class="zhengge1">确定密码：<input type=" password" class="bianjikuang"></div>
+
+        <!-- 按钮 -->
+
+        <input type="submit" value="保存" class="anniu1">
+
+        <div class="zuihou">
+            <h3>温馨提醒：</h3>
+            <ol>
+                <li>密码必须包含数字，字母中的2种字符，不允许出现下划线及特殊符号；</li>
+                <li>连续3位及以上的数字不能连号（例如123、654）；</li>
+                <li>连续3位及以上的字母不能连续（例如abc、cba）；</li>
+                <li>密码不能包含账号；</li>
+                <li>密码长度必须为8至16位；</li>
+            </ol>
+        </div>
+</body>
+
+</html>

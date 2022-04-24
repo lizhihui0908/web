@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .top {
+            height: 30px;
+            background-color: aqua;
+        }
+
+        .banner {
+            height: 60px;
+            width: 700px;
+            background-color: aquamarine;
+            margin: 10px auto;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        .nav {
+            /* 清除浮动 */
+            overflow: hidden;
+            height: 60px;
+            width: 700px;
+
+            margin: 10px auto;
+        }
+
+        .nav li {
+            float: left;
+            background-color: bisque;
+            width: 150px;
+            height: 100px;
+            margin-right: 33px;
+        }
+
+        .nav .first {
+            margin-right: 0;
+        }
+
+        .footer {
+
+            height: 60px;
+            background-color: blanchedalmond;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="top"></div>
+    <div class="banner"></div>
+    <div class="nav">
+        <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li class="first">4</li>
+        </ul>
+    </div>
+    <div class="footer"></div>
+</body>
+
+</html>

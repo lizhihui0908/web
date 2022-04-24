@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>网易邮件</title>
+    <link rel="stylesheet" href="网易登陆界面美化css代码">
+    <style>
+        table tr td {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <img src="images/logo.gif" height="38" width="392">
+    <div style="text-align: right;">帮助</div>
+    <img src="images/title.jpg" width="1500">
+
+    <!-- 文字部分 -->
+    <h3>创建您的账号</h3>
+    <!-- 加入url网址 -->
+    <form action="url地址" method="post" name="客户信息">
+        <table>
+            <tr>
+                <td>用户名：&nbsp;</td>
+                <td> <input type="text" name="yonghming"></td><br>
+            </tr>
+
+            <tr>
+                <td>密码：&nbsp;</td>
+                <td><input type="password"></td>
+            </tr>
+            <br>
+
+            <tr>
+                <td>再次输入密码：</td>
+                <td><input type="password"></td><br>
+            </tr>
+        </table>
+
+
+
+        <strong>安全信息设置</strong>（以下信息非常重要，请谨慎填写）<br>
+        <table>
+            <tr>
+                <td>密码保护问题：</td>
+                <td><select>
+                        <option selected="selected">请输入密码提示问题</option>
+                        <option></option>
+                        <option></option>
+                </td>
+            </tr>
+            </select><br>
+
+
+            <tr>
+                <td>密码保护问题答案：</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+    </form>
+
+
+    <!-- 性别标签 -->
+    <td>性别：&nbsp;</td>
+    <td><label for="sex">男</label>
+        <input type="radio" name="sex" id="sex">&nbsp;&nbsp;
+        <label for="sex">女</label>
+        <input type="radio" name="sex" id="sex">
+    </td>
+    </tr> <br>
+
+    <tr>
+        <!-- 出生年月日 -->
+        <td>出生日期：&nbsp;</td>
+        <td><select>
+                <option selected="selected">2000</option>
+                <option></option>
+            </select>年
+            <select>
+                <option selected="selected">09</option>
+                <option></option>
+            </select>月
+            <select>
+                <option selected="selected">08</option>
+                <option></option>
+            </select>日
+        </td>
+        <br>
+    </tr>
+
+    <tr>
+        <td>手机号：&nbsp;</td>
+        <td><input type="text"></td>
+        <br>
+    </tr>
+    </table>
+
+
+    <strong>注册验证</strong>
+    <table>
+        <tr>
+            <td></td>
+            <td><img src="images/verycode.gif">
+                <a href="http://www.tuchong.com" target="_blank">看不清楚，换一张</a>
+            </td>
+        </tr><br>
+        <tr>
+            <td>请输入上边的字符：&nbsp;</td>
+            <td><input type="text"></td>
+        </tr>
+    </table>
+
+    <h3>服务条款</h3><br>
+    <table>
+        <input type="checkbox">
+        我已阅读并接受“<a href="#">服务条款</a>”和“
+        <a href="#">隐私权保护和个人信息利用政策</a> ”<br>
+        <tr>
+            <td></td>
+            <td><img src="images/button.gif"></td>
+        </tr>
+    </table>
+
+
+</body>
+
+</html>

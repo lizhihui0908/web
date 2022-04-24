@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 行内元素转成块状元素 */
+        a {
+            display: block;
+            background-color: aqua;
+            width: 100px;
+            height: 100px;
+            text-align: center;
+        }
+
+        /* 块状元素转成行内元素 */
+        div {
+            display: inline;
+        }
+
+        /* 块元素转成成行内块元素 */
+        span {
+            display: inline-block;
+            height: 50px;
+            width: 300px;
+            background-color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="#">看看我</a>
+    <div>块级元素</div>
+    <div>块级元素</div>
+    <span>块级元素转换成行内块元素</span>
+    <span>块级元素转换成行内块元素</span>
+
+</body>
+
+</html>

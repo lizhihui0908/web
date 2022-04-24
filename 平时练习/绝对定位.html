@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 父盒子没有设置定位 ,则里面的定位小盒子以页面为参考位移*/
+        .a {
+            position: absolute;
+            top: 50px;
+            left: 50px;
+            width: 150px;
+            height: 150px;
+            background-color: aqua;
+        }
+
+        /* 父盒子没有设置定位 */
+        .b {
+            width: 300px;
+            height: 300px;
+            margin-left: 100px;
+            margin-top: 100px;
+            background-color: blueviolet;
+        }
+
+
+        /* 爷爷级别的盒子带定位 */
+        .c {
+            width: 500px;
+            height: 500px;
+            position: absolute;
+            right: 100px;
+            top: 150px;
+            background-color: cadetblue;
+        }
+
+        /* 父级盒子不带定位 */
+        .d {
+            width: 300px;
+            height: 300px;
+            margin-left: 40px;
+            margin-top: 100px;
+            background-color: chocolate;
+        }
+
+        /* 里面的小盒子定位 */
+        .e {
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            left: 10px;
+            bottom: 50px;
+            background-color: chartreuse;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 父盒子不带定位的情况 -->
+    <div class="b">
+        <div class="a"></div>
+    </div>
+
+
+    <!-- 父盒子不带定位，但是爷爷级别的盒子带了定位的情况（以最近一级带定位的盒子为标准） -->
+    <div class="c">
+        <div class="d">
+            <div class="e"></div>
+        </div>
+
+
+    </div>
+</body>
+
+</html>
