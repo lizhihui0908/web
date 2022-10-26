@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+  var str = "1adsad2asd5";
+  // split()可以将字符串转换为数组   在其方法中传递一个正则表达式，可以按照要求通过不同的字符串将之分成数组
+
+  /*
+  根据任意字母将字符串拆分         默认全局
+   */
+   var result = str.split("2");
+   console.log(result)
+
+  /*
+  根据任意字母将字符串拆分成多个数组
+   */
+  var result2 = str.split(/[1-9]/);    //通过正则表达式来将字符串按照任意要求分成若干个小数组
+  console.log(result2)
+
+  // search()搜索字符串中是否含有指定内容    与indexof（）功能相同    只会查找出第一个字符串，全局对他没用
+  var result3 = str.search("2");    //如果搜索到了内容，则会返回第一次出现的检索，如果没有搜索到，则会返回-1
+  console.log(result3);
+
+  //可以通过正则表达式来搜索
+  var str2= "hello abc cce cef gtg tbh"
+  var result4 = str2.search(/a[bcdef]c/);
+  console.log(result4);
+
+
+  //match() 可以根据正则表达式，将符合要求的数从一个字符串中提取出来      会将符合要求的数提取到一个数组中，即使只有一个符合条件
+  result5 = str2.match(/b/);
+  console.log(result5);  //只会找到第一个符合值并且返回
+  //设置正则表达式为全局匹配模式，可以全部检索出来
+  result5 = str2.match(/b/gi);        //即全局又不会区分大小写
+console.log(result5);
+
+
+//replace()    将字符串中指定内容替换为新的内容, 默认替换第一个指定内容
+  //    参数   （被替换内容，新内容）
+  result6 = str2.replace("e","@");
+  result7 = str2.replace(/e/gi,"@");      //添加正则表达式，全局替换
+  console.log(result6);
+  console.log(result7);
+</script>
+</html>

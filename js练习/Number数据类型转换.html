@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script type="text/javascript">
+  /*                            Number数据类型转换  方法一
+  Number()
+  Number()只能转换纯数字，变成其他非法数字就改成NAN
+  空串（""）或者全是空格输出的内容是0
+  如果是布尔值boolean中的true，改变数值之后则输出1；false则是0
+  null         转成数字也是0
+  nudefind     转成数字为NAN
+  */
+  var a = "123";
+  a = Number(a);
+  console.log(typeof a);
+  console.log(a)
+/*
+                                    转换方式二
+parseInt()    把字符串转换成整数 ,将字符串中有效的整数取出来   123a456则会输出123
+parseFloat    把字符串转换成浮点数
+ */
+  b = "998px";
+  b = parseInt(b);
+  c = "999.555"
+  c = parseFloat(c)
+  console.log(typeof b);
+  console.log(b)
+  console.log(typeof c);
+  console.log(c)
+
+
+
+  //在js中如果需要转换成16进制的数，则需要以0X开头
+//如果需要表示8进制，则需要用0开头
+  //2进制用0b开头，，有些浏览器不支持
+  d = 0X10;   //16进制
+  //如果需要转成number数据类型，则需要使用parseint（）
+  d = parseInt(d,10)//d表示要转义的内容，10表示进制
+  console.log(d)  //控制台会输出16 ，10的16进制就是16
+  f = 0X82;   //16进制
+  console.log(f)  //控制台会输出130
+</script>
+</html>

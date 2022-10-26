@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <script>
+    function creatperson(name,age,ex) {
+      let obj = new Object();
+      obj.name = name;
+       obj.age =age;
+      obj.ex =ex;
+      return obj;
+    }
+
+    function creatdog(name,age) {
+        var obj = new Object();
+        obj.name=name;
+        obj.age =age;
+        obj = new function (){
+            alert("汪汪");
+        };
+        return obj;
+    }
+    // 创建一个狗的对象
+   // var dog = creatdog("旺财",18);
+
+
+    let obj1 = creatperson("1","1","1");
+    let  obj2 = creatperson("2","2","2");
+    const obj3 = creatperson("3","3","3");
+    let  dog = creatdog("旺财","18");
+    console.log(dog);
+    console.log(obj3);
+
+  </script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script type="text/javascript">
+      //枚举对象中的属性用    for....in 语句
+      /*
+      语法：  for（var  变量 in 对象）{
+                        }
+       */
+  var  obj = {
+    name:"辉辉",
+    age:"20",
+    adress:"河南省",
+    tel:"444444"
+  };
+
+  for (var  n in obj) {    //n的值为name，age，adr，tel
+    //  console.log("hello")      //obj里面有几个变量就运行几次hello
+           console.log(obj[n])
+  };
+</script>
+</html>

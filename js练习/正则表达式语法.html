@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+  /*
+  量词   {n}   通过量词来设置一个变量所出现的次数
+                  量词只对他前面的一个内容起作用     /ab{3}/   ===   /abbb/        /（ab）{3}/  ===   /ababab/
+
+                  {m,n}  出现m-n次
+            /ab+c/    + 至少一个         /ab*c/    * 0个或多个
+   */
+  var reg =/a{3}/ ;
+  var result = reg.test("aaaxacss");
+  console.log(result);
+
+  //创建一个正则表达式，来检查时候是一个手机号        /^1[3-9][0-9]{9}$/
+/*
+                  手机号规则
+                     11位
+                     1开头                             ^1
+                     第二位属于3-9的任意数字              [3-9]
+                     三位以后任意数字9个                 [0-9]{9}$                   $表示固定再无其他数
+ */
+  var phonestr = "13213901483";
+  var  reg =/^1[3-9][0-9]{9}$/;
+  console.log(reg.test(phonestr));
+
+
+  //检查字符串中是否含有点  .          \.来表示.    \\表示\
+  /*
+    . 表示任意字符
+    在正则表达式中用\来转义字符
+
+   */
+  var reg2=/\./;
+  console.log(reg2.test("adsas.cds"))
+
+
+  //                           \b单词边界 ，选中单独的单词，如果是复合词则会返回false
+  var reg3 = /\bchild\b/;
+  var reg4 = /child/;
+  console.log(reg3.test("jsias child an"));    //true
+  console.log(reg3.test("jsiaschildan"));      //false
+  console.log(reg4.test("jsias child an"));    //true
+  console.log(reg4.test("jsiaschildan"));      //true
+
+
+  /*/
+           去除开头的一个空格      ^\s             去除开头的所有空格      ^\s*
+           去除结尾的一个空格      \s$              去除结尾的多个空格      \s*$
+           去除开头和结尾的空格               /  ^\s* |  \s*$ /g
+   */
+
+  /*
+  电子邮件的正则表达式          /^([A-Za-z0-9_-.])+@([A-Za-z0-9_-.])+.([A-Za-z]{2,4})$/
+   */
+</script>
+</html>

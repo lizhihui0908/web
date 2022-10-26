@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+  //数组    Array
+  var  arr= new Array();
+
+  //添加数组中的元素                         数组名[索引（从0开始]= 值；
+  arr[10]= 10;
+  arr[22]= 25;
+
+  //读取数组中的元素                            数组名[索引（从0开始）]
+  console.log(arr[10]);
+
+  //获取数组长度      对于非连续性的数字。length之后数组的长度是最大索引 +1
+  console.log(arr.length);
+  console.log(arr);
+
+     //length也可以修改长度
+  arr.length = 50;
+  console.log(arr.length);
+  console.log(arr);
+
+
+  //向数组最后面的索引赋值
+  arr[arr.length]=88;
+  console.log(arr.length);
+  console.log(arr);
+</script>
+</html>

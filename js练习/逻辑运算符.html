@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script type="text/javascript">
+  /*
+  js中有3种逻辑运算符
+
+    ！  非
+  可以对布尔值做取反操作  true ——》 false
+可以为任意数据类型取两次反，使之类型变成Boolean值
+
+   &&   与
+两个true运算结果为true，只要有一个false则结果都是false
+
+
+   ||  或
+   */
+
+  //                       ！  非
+  var  a = true;
+  a = !a;
+  console.log(a);
+
+
+  //                         &&   与
+
+  //如果两个值都是数字，都是true，则会返回后面的那个值  2 && 5 ，则会反馈5    如果0 && 3则会反馈0
+          // 如果两个值中有两个false则会反馈较前的数值，
+  /*
+  如果第一个值为true，则必然会反馈第二个值
+  如果第一个值为false，则会直接反馈第一个值
+   */
+var b = true;
+e = false;
+c = b && true;
+f = e && c;
+console.log(c);
+  console.log(f);
+  //第一个true则会检查第二个值         true && alert（）
+  //第一个是false则不会检查第二个值     false && alert（）
+
+  //                         ||  或
+  //在 | | 中，有一个真的都是真的，有一个是假的都是假的
+ result = true || false;
+  console.log(result)
+</script>
+</html>

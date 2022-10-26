@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script type="text/javascript">
+  /*
+                           for循环     语法
+                           for（初始表达式;条件表达式;更新表达式）{
+                           语句
+                           }
+1.先执行初始化表达式，初始化变量      （只执行一次）
+2.执行条件表达式，判断是否执行循环。如果true，则执行循环体（语句）；如果false，则终止循环
+3.执行更新表达式，执行完毕后继续执行步骤2
+   */
+ //             例子       1-10依次输出
+  /*   var i=1;
+     while (i<=10){
+       document.write(i++ + "<br>"  )
+     }
+   */
+
+  /*      for (i = 1 ;i <= 10;i++){
+    //  for（初始表达式;条件表达式;更新表达式）{
+     }
+    document.write(i );
+
+   */
+
+                  //  打印1-100之间的所有奇数之和
+  // 创建一个变量，保存奇数之和
+  var sum = 0;
+  // 定义一个计数器
+  var count = 0;
+  //打印1-100之间的数
+  for ( var i = 1; i <= 100; i++){
+    // 判断i是否为奇数,,不能被2整除的数就是奇数
+    if (i % 2 !=0){
+// 如果除于2有余数，则为奇数
+//       求奇数之和
+      sum = sum +  i;
+      count++;
+    }
+  }
+  console.log(sum);
+  // 一共有几个奇数
+  console.log(count);
+</script>
+</html>

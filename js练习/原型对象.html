@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+   //   原型对象   相当于公共区域     prototype             可有将所有对象内共有的内容，定义到原型对象中
+   function Myclass() {
+       
+   }
+   //向Myclsaa中添加属性a
+   Myclass.prototype.a = 123;
+     //向Myclass中添加方法
+   Myclass.prototype.sayhello =function (){
+       alert("你好");
+   };
+   var mc = new Myclass();
+   var mc2 = new Myclass();
+//向mc中保存另外一个a属性
+     mc.a = "我是谁";
+
+   //判断mc与mc2是否原型对象一致
+   console.log(mc2._proto_ == Myclass.prototype);
+   //此时mc.a是我们赋的值
+   console.log(mc.a)
+   console.log(mc2.a)
+   mc.sayhello();
+</script>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+  function Text(name,age) {
+  this.name =name;
+  this.age =age;
+  }
+
+  //修改Text原型的to string（）
+Text.prototype.toString=function (){
+    return"Text[name"+this.name+",age"+this.age+"]"
+};
+  //创建一个Text实例
+  var te = new Text("猪八戒",18);
+  var te2 = new Text("唐僧",59);
+
+  console.log(te2)
+</script>
+</html>

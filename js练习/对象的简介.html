@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script type="text/javascript">
+  /*
+  对象的分类
+  1.内建对象   ES标准中定义的对象 String number...
+ 2. 宿主对象    JS中有浏览器提供的对象  Bom。Dom 例如console
+ 3.自建对象      开发人员自己创建的对象
+   */
+             //创建对象
+       var obj = new Object();
+       // 在对象中保存的值为属性                   对象.属性名 = 属性值；
+  //向obj中添加name属性并赋值
+  obj.name = "猴子";
+  obj.age = "14";
+  obj.ex = "男";
+  console.log(obj);
+
+            //读取对象中的属性                    对象.属性名
+  console.log(obj.age);
+              //修改属性值                      对象.属性名 = 新属性值；
+             //删除属性值                     delete  对象.属性名
+  delete obj.age;
+  console.log(obj)
+</script>
+</html>

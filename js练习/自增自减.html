@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script type="text/javascript">
+    /*
+                                   自增   a++   ++a
+                                   a++输出的值是a的值（自增以前的值），++a输出原来数值加1之后的数值
+                                   无论是a++还是++a，都会使原变量立马自加1
+     */
+    var  a = 2;
+    // a++;
+    console.log(a++);   //结果是2
+    console.log(a)     //结果是3
+
+
+    var  d = 20;
+    result = d++ + ++d + d;
+         //   d++ 值为20   ，d++之后 d=21， ++d的值为22，++d后d=22
+    console.log(result)   //结果就是20+22+22=64
+
+</script>
+</html>

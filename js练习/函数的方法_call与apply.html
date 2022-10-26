@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    //使用call（）或者apply（）都会立即调用函数               修改函数执行时的this
+function fun() {
+    alert(this.name)
+}
+var obj = {name:"huihui"};
+    var obj2 = {name:"yingying"}
+fun.apply(obj)
+</script>
+</html>

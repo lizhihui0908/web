@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+  function Test() {
+    
+  }
+  Test.prototype.a = "我是一段话";
+  var te=new Test();
+console.log(te.a);
+//验证是否有a 不管是对象里面有还是te中有，只要有都会返回true
+//  console.log("a" in te);
+
+  //用hasOwnProperty（） 来检测对象自身中是否含有此元素  有则会返回true
+  console.log(te.hasOwnProperty("a"))
+</script>
+</html>

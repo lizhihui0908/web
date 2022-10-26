@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script type="text/javascript">
+  a = 10;
+  console.log( a == 3); //false
+
+  //当使用 == 来比较两个不同数据类型的，需要先进行数据转换，转换成相同的数据类型在做比较
+  console.log("1" == 1)  //true
+  console.log( null == 0); //false
+  console.log( true == "1"); //true
+  console.log( undefined == null) //true
+  //NaN不和任何值相等，包括它本身
+
+  //可以通过isNaN()来判断一个数是否是NaN
+
+  var b = NaN;
+  console.log(isNaN(b))  //true
+
+  /*
+  不等   ！=             !=== 不全等
+   */
+   console.log(10 != 2);   //true
+   console.log(10 != 10)   //false
+
+  /*
+  全等 ===
+   */
+  console.log(1 === 1);   //true
+  console.log("123" === 123);   //false
+</script>
+</html>

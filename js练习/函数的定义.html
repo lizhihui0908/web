@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script type="text/javascript">
+  /*
+                                       函数 function
+                                       函数也是一个对象
+                                       函数中可以封装代码，可以保存一些代码在需要的时候调出来
+                                       封装后的代码不会立即执行，在被调用时才会执行
+                                       调用函数的语法      函数对象（）      函数中封装的代码会按顺序执行
+   */
+  var fun = new Function("console.log('这是第一个函数代码');");    //创建一个函数   function
+  fun();
+  fun();
+  fun.hello = "你好";
+  console.log(fun.hello);
+
+  /*
+                        使用函数声明来创建函数
+                        语法   function 函数名（【 形参 1，形参2 ... 】）{
+                        语句...
+                        }
+   */
+  function fun2 ( ) {
+    console.log("你干嘛");
+  }
+  fun2( );
+  console.log( fun2);
+
+  /*
+                      使用函数表达式来创建函数
+                      var 函数名 = function（【 形参 1，形参2 ... 】）{
+                       语句...
+                      }
+   */
+  var fun3 = function ( ){
+    console.log("小黑子");
+  }
+  fun3();
+</script>
+</html>

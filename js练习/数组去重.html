@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        var arr = [1, 2, 3, 3, 2, 1, 5, 4, 2];
+        var result = [];
+        // 遍历原数组
+        arr.forEach(function (temp) {
+            var flag = true;
+            // 遍历新数组查找有无重复
+            result.forEach(function (temp2) {
+                if (temp2 == temp)
+                    flag = false;
+            })
+            if (flag)
+                result.push(temp);
+        })
+        console.log(result)
+    </script>
+    </head>
+</body>
+
+</html>

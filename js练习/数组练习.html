@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+  //构造一个函数
+  function dog(name,age,type) {
+      this.name = name;
+      this.age = age;
+      this.type = type;
+  }
+  //修改原型dog中的tostring
+  dog.prototype.toString =function (){
+      return "dog[name="+this.name+", age="+this.age+",type = "+this.type+"]"
+  }
+
+  //创建一个dog类
+  var dog1 = new dog("小花",5,"田园犬");
+  var dog2 = new dog("小白",3,"杜宾犬");
+  var dog3 = new dog("小黑",7,"秋田犬");
+  var dog4 = new dog("小辉",6,"泰迪犬");
+
+  //将这些dog类全部放入数组中
+  var dogarr=[dog1,dog2,dog3,dog4];
+
+  /*
+  要求         构建一个函数，可以将超过5岁的dog提取出来，然后封装到一个数组并返回
+   */
+
+  //创建一个新的数组
+  var newArr=[];
+
+  function getDogarr(arr) {
+
+      //遍历原数组，获取arr中dog的对象
+     for (var i = 0;i<arr.length;i++) {
+      var p = arr[i];            //p相当于dogarr中的每一个元素
+
+    //判断dog的age是否大于等于5
+      if (p.age >= 5){
+    //如果大于等于5，则把符合条件的放入新数组newArr中
+    newArr.push(p);
+    }
+}
+
+      //返回新的数组
+      return newArr;
+  }
+  var result = getDogarr(dogarr);
+  console.log(result);
+
+</script>
+</html>

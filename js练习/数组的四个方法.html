@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+  //设置一个数组
+  var arr = ["孙悟空","猪八戒","唐僧"];
+//      push()  向数组中的末尾添加一个或多个元素到数组的末尾，并返回数组的新长度
+  arr.push("沙和尚","白骨精");
+
+  var result=arr.push("沙和尚","白骨精");
+  console.log(arr);
+  console.log(result);
+
+  //pop     该方法可以删除数组的最后一个元素   并将删除的元素作为返回值返回
+  //arr.pop();
+  console.log(arr);
+   result1=arr.pop();
+  console.log(result1);
+  //pop一次删除一次
+  arr.pop();
+  console.log(arr);
+  arr.pop();
+  console.log(arr);
+
+  //unshift()    向数组的开头添加一个或多个元素，并返回数组的新长度
+  console.log(arr);
+  result2 = arr.unshift("老母猪");
+  console.log(arr);
+  console.log(result2);
+
+  //  shift()          该方法可以删除数组的第一个元素   并将删除的元素作为返回值返回
+  console.log(arr);
+ result3= arr.shift();
+  console.log(arr);
+  console.log(result3);
+</script>
+</html>

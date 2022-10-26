@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+  var str = "hello world"
+
+  //charAt（）  返回字符串中指定位置的字符
+ var result = str.charAt(2);
+  console.log(result);
+
+  //charCodeAt() 获取指定位置的字符编码（unicode编码）
+
+  //concat（）可以链接两个或多个字符串   作用和+一样
+  result2= str.concat("你好","再见");
+  console.log(result2);
+
+  //indexof()可以检索一个字符串中是否有对应的元素，    可以指定查找范围indexof（“字符串”，开始检索数）
+  //如果有，则返回第一次出现的索引序号，如果没有找到指定内容则返回-1
+  var h = "jkijnhjsn";
+  result3 = h.indexOf("s");
+  console.log(result3);
+
+  //lastindexof() 该方法的作用是从后往前检索一个字符串中是否有对应的元素
+
+  //slice（）可以截取字符串，不会影响原字符，而是将截取的内容返回
+  //参数   （开始位置索引且包括起始位置，结束位置索引且不包括结束位置）   如果省略第二个参数则会截取后面所有的
+//substring（开始位置索引且包括起始位置，结束位置索引且不包括结束位置 ） 也可以截取字符串，不会影响原字符，而是将截取的内容返回
+  //slice和substring的区别就是substring的参数不能取负值，且会自动调整参数位置，如果第二个参数比第一个参数大，会自动调整位置
+
+  //substr(截取开始位置的索引，截取索引长度)
+  var str2 = "mkmokm";
+  result4 = str2.substr(2,4);
+  console.log(result4);
+
+  //split()可以将字符串拆分为数组   ，需要一个字符串作为参数，用这个参数去拆分字符串为数组
+  var  str3 = "asdas,adwaw,wadw,srf,sfse"
+  result5 = str3.split(",");
+  console.log(result5[0])  //可以根据索引来显示数组
+
+  // toUpperCase（）将所有字符串转换为大写
+  var str4 = "a,c,v,b,r,e,";
+  result6 = str4.toUpperCase();
+  console.log(result6);
+  //toLowerCase()将所有的字符串转换为小写
+</script>
+</html>

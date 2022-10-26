@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script type="text/javascript">
+  /*
+  null在+法运算中会被当作0
+  任何值跟NaN做加法运算，结果都是NaN
+
+  如果对两个字符串做加法运算，则会变成拼串操作，eg：“123"+”456“=”123456“
+  任何值跟字符串相加都会先换成字符串，然后进行拼串进行运算
+   */
+  //                                   %    取余数
+  a = 123;
+  b = a+8;
+  result = a + 15;
+  console.log(b);
+  console.log(result)
+
+
+result = true +1;
+  console.log(result)//结果是2
+
+
+result = true + false;
+  console.log(result)//true在这里会被看成1，此时结果是1
+
+  result = 2 + null;
+  console.log(result)//结果为2，null会被看成0
+
+   result = 2 + NaN;             //结果为NaN
+   console.log(result)
+
+  result = "你好" + "世界";
+  console.log(result)
+
+  result = "你好"
+          + "世界"
+          +"我是"
+           +"谁" ;
+  console.log(result)
+
+
+  // 任何值跟字符串相加都会先换成字符串，然后进行拼串进行运算
+  //可以根据这个条件，来让number类型的数据换成字符串
+  c = 555;
+  c = c + "";
+  console.log(typeof c)
+  console.log("c = " + c)
+
+
+  //1+2+"3", 则会先计算1+2，然后在跟字符串3相加 ，接过为d=33
+  //如果是”1“+2+3，则会按顺序计算，结果为123
+  d = 1+2+"3"
+  console.log("d="+d)
+
+  //                                   %    取余数
+
+ var e = 9%5;
+  console.log(e) //结果取余数，结果为4
+</script>
+</html>

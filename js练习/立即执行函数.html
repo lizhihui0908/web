@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+
+<!--立即执行函数，只调用一次，用完就会扔掉-->
+
+<script type="text/javascript">
+  (function (){
+    alert("我是一个函数")
+  })();
+
+
+
+
+  (function (a,b){
+    console.log("a =" + a);
+    console.log("b =" + b);
+  }(123,456))
+</script>
+</html>
